@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - docker login -u $docker_username -p $docker_password
+      - docker login -u $dockerhub_username  -p $dockerhub_password
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
